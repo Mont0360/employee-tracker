@@ -6,7 +6,7 @@ const connection = mysql.createConnection({
     host: "localhost",
     port: 3306,
     user: "root",
-    password: "Van1gogh!",
+    password: "PasswordHere",
     database: "employeeTracker_db"
 });
 
@@ -22,8 +22,7 @@ connection.connect(function (err) {
 getJob();
 
 function getJob() {
-    inquirer
-        .prompt(
+    inquirer.prompt(
             {
                 name: 'job',
                 type: 'list',
@@ -49,8 +48,7 @@ function getJob() {
         })
 }
 function add() {
-    inquirer
-        .prompt(
+    inquirer.prompt(
             {
                 name: "db",
                 message: 'Which would you like to add?',
@@ -74,8 +72,7 @@ function add() {
 }
 
 function add_department() {
-    inquirer
-        .prompt(
+    inquirer.prompt(
             {
                 name: 'name',
                 message: "What is the department's name?",
@@ -102,8 +99,7 @@ function add_role() {
         }
 
 
-        inquirer
-            .prompt([
+        inquirer.prompt([
                 {
                     name: 'title',
                     message: "What is the role?",
@@ -151,8 +147,7 @@ function add_employee() {
                 employees.push(data[i].first_name);
             }
 
-            inquirer
-                .prompt([
+            inquirer.prompt([
                     {
                         name: 'first_name',
                         message: "what's the employees First Name",
@@ -196,8 +191,7 @@ function add_employee() {
 }
 
 function view() {
-    inquirer
-        .prompt(
+    inquirer.prompt(
             {
                 name: "db",
                 message: 'Which would you like to view?',
@@ -215,8 +209,7 @@ function view() {
 }
 
 function update() {
-    inquirer
-        .prompt(
+    inquirer.prompt(
             {
                 name: 'update',
                 message: 'What would you like to update?',
