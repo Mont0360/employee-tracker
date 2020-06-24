@@ -5,11 +5,11 @@
 Developers are often tasked with creating interfaces that make it easy for non-developers to view and interact with information stored in databases. Often these interfaces are known as Content Management Systems. This assignment uses node, inquirer, and MySQL to build a solution for managing a company's employees.
 
 ## User Story
-
+```
 As a business owner
 I want to be able to view and manage the departments, roles, and employees in my company
 So that I can organize and plan my business
-
+```
 ## Screen Shot
 
 <img width="727" alt="Screen Shot 2020-06-23 at 10 59 44 PM" src="https://user-images.githubusercontent.com/61704824/85498445-53e57780-b5a5-11ea-914f-ffa9e4cd481c.png">
